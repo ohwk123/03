@@ -4,11 +4,16 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	char text;
+	int x,y;
+	float z;
 	
-	printf("input a character:");
-	scanf("%c", &text);
+	printf("분자를 입력하시오:");
+	scanf("%d", &x);
+	printf("분모를 입력하시오:");
+	scanf("%d", &y);
+	z = (float)x/y;
 	
-	printf("the next character of %c (%d) is %c (%d)\n", text, text, text+1, text+1);
+	
+	printf("나누기의 결과는 %f입니다\n", z );
 	return 0;
 }
